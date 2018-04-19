@@ -1,0 +1,23 @@
+﻿<RibbonWindow x:Class="WpfCursus.WindowMetRibbon"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+       Height="350" Width="525" Icon="images\app48.png" Title="Window met Ribbon">
+
+    <RibbonWindow.CommandBindings>
+        <CommandBinding Command="Help" Executed="HelpExecuted"></CommandBinding>
+        <CommandBinding Command="New" Executed="NewExecuted"></CommandBinding>
+        <CommandBinding Command="Open" Executed="OpenExecuted"></CommandBinding>
+        <CommandBinding Command="Save" Executed="SaveExecuted"></CommandBinding>
+        <CommandBinding Command="Close" Executed="CloseExecuted"></CommandBinding>
+        <CommandBinding Command="Print" Executed="PrintExecuted"></CommandBinding>
+        <CommandBinding Command="PrintPreview" Executed="PreviewExecuted"></CommandBinding>
+    </RibbonWindow.CommandBindings>
+
+    <DockPanel LastChildFill="True">
+
+        <TextBox  Name="TextBoxVoorbeeld" Text="Dit is voorbeeldtekst" 
+           VerticalAlignment="Stretch" HorizontalAlignment="Stretch" 
+           FontSize="24" TextWrapping="Wrap" MaxWidth="600" MaxHeight="900">
+        </TextBox>
+    </DockPanel>
+</RibbonWindow>
