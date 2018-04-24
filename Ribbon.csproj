@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{4718FF60-9866-457D-B216-784BB34BD58E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Ribbon</RootNamespace>
+    <RootNamespace>WpfCurcus</RootNamespace>
     <AssemblyName>Ribbon</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -59,6 +59,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="MyConverters.cs" />
     <Compile Include="WindowMetRibbon.xaml.cs">
       <DependentUpon>WindowMetRibbon.xaml</DependentUpon>
     </Compile>
@@ -81,6 +82,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -122,6 +124,18 @@
     <Resource Include="Images\Save64.png" />
     <Resource Include="Images\Undo16.png" />
     <Resource Include="Images\Undo64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\afsluiten.png" />
+    <Resource Include="Images\bold.png" />
+    <Resource Include="Images\copy.png" />
+    <Resource Include="Images\cut.png" />
+    <Resource Include="Images\italic.png" />
+    <Resource Include="Images\open.png" />
+    <Resource Include="Images\paste.png" />
+    <Resource Include="Images\preview.png" />
+    <Resource Include="Images\print.png" />
+    <Resource Include="Images\save.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
